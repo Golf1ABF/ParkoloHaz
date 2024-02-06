@@ -1,4 +1,10 @@
-﻿namespace Parkolo
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parkolo
 {
     internal class Program
     {
@@ -19,6 +25,10 @@
             Console.WriteLine($"8.Feladat {list.MinBy(e => e.Szektorok.Sum()).SzintNeve}");
 
             Console.WriteLine($"9.Feladat {list.FirstOrDefault(e => e.Szektorok.Contains(0)).SzintSzama}");
+
+            var atlag = list.All(e => e.Szektorok.Average();
+
+            Console.WriteLine($"10.Feladat {list.Where(e => e.Szektorok.Average() ==)}");
         }
     }
 }
